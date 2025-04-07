@@ -50,7 +50,7 @@ def load_initial_setup() -> None:
     # Apps al inicio
     autostart = [
             "feh --bg-fill /home/jesus/Descargas/gruvbox_girl.png",
-            "picom --config /home/jesus/.config/picom/config.conf &"
+            "picom --config ~/.config/picom/config.conf --vsync &"
         ]
 
     for x in autostart:
