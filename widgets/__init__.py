@@ -99,11 +99,13 @@ BOTTOM_BAR_WIDGETS = [
     get_right_arrow("dark_gray","blue"),
 
     get_spacer(),
-    tasklist_widget,
-    
-    #get_left_arrow("medium_gray","dark_gray"),
+    #tasklist_widget,
+
+    get_left_arrow("dark_gray","medium_gray"),
     status_notifier_widget,
     bluetooth_widget,    
+    heart,
+    get_separator("medium_gray"),
 
     get_left_arrow("medium_gray","red"),
     icon("cpu", "red", "dark_gray"), 
@@ -114,6 +116,8 @@ BOTTOM_BAR_WIDGETS = [
     icon("brightness", "yellow"),
     brightness_widget,
     get_separator("yellow"),
+]
 
-    # us_fr_image,
+RIGHT_BAR_WIDGETS = [
+    us_fr_image,
 ]

@@ -5,7 +5,7 @@ from libqtile.lazy import lazy
 from custom_keys import CUSTOM_KEYS, MOUSE_BINDINGS
 from layouts import LAYOUTS
 from groups import GROUPS
-from bars import TOP_BAR, BOTTOM_BAR
+from bars import TOP_BAR, BOTTOM_BAR, RIGHT_BAR
 from utils import add_groups_switch_bindings, add_waylands_switch_vt_bindings, load_initial_setup
 
 keys = CUSTOM_KEYS
@@ -27,7 +27,8 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         top = TOP_BAR,
-        bottom = BOTTOM_BAR
+        bottom = BOTTOM_BAR,
+        right=RIGHT_BAR
     ),
 ]
 

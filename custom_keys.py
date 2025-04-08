@@ -63,9 +63,10 @@ CUSTOM_KEYS = [
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    
+  
     # custom 
     Key([mod, "shift"], "h", lazy.hide_show_bar("bottom"), desc="ocultar / mostrar dock"),
+    Key([mod, "shift"], "n", lazy.hide_show_bar("right"), desc="ocultar / mostrar panel lateral"),
     Key([mod, "shift"], "q", lazy.spawn("dunstctl close-all"), desc = "cerrar notificaciones"),
     Key([mod], "space", lazy.spawn("rofi -show drun"), desc="rofi, menu de aplicaciones"),
     Key([mod], "Print", lazy.spawn("flameshot gui"), desc="Take a screenshot with Flameshot"),
@@ -81,6 +82,6 @@ CUSTOM_KEYS = [
     Key([mod], "f9", lazy.spawn("playerctl previous"), desc="prev song"),
     Key([mod], "f10", lazy.spawn("playerctl play-pause"), desc="play / pause"),
     Key([mod], "f11", lazy.spawn("playerctl next"), desc="next song"),
-    Key([mod], "f2",  lazy.spawn("brightnessctl set 10%-"), desc=""),
-    Key([mod], "f3",  lazy.spawn("brightnessctl set +10%"), desc=""),
+    Key([mod], "f2",  lazy.spawn("brightnessctl set 5%-"), desc="Bajar brillo"),
+    Key([mod], "f3",  lazy.spawn("brightnessctl set +5%"), desc="Subir brillo"),
 ]

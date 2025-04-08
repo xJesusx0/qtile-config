@@ -1,5 +1,6 @@
-from libqtile import widget
+from libqtile import widget, qtile
 from libqtile import bar
+from libqtile.lazy import lazy
 
 from styles import NEW_COLORTHEME, ICONS
 
@@ -114,3 +115,15 @@ def icon(icon_name: str,bg: str = "light_gray", fg: str = "dark_gray") -> widget
             background= custom_bg,
             foreground=custom_fg,
     )
+heart = widget.TextBox(
+    text='',
+    font="JetBrainsMono Nerd Font Mono",
+    background= NEW_COLORTHEME["medium_gray"],
+    foreground= NEW_COLORTHEME["red"],
+    padding=0,
+    fontsize=24,
+    mouse_callbacks={
+        'Button1': lambda: qtile.hide_show_bar("right")
+    },
+)
+
